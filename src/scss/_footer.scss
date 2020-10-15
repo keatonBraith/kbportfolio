@@ -9,23 +9,6 @@
   opacity: 0.4;
   flex: 1;
 
-  @media (max-width: 1200px) {
-    margin-top: 148vh;
-  }
-
-  @media (max-width: 1000px) {
-    margin-top: 121.4vh;
-  }
-
-  @media (max-width: 770px) {
-    margin-top: 106.5vh;
-  }
-
-  @media (max-width: 500px) {
-      margin-top: 228.3vh;
-      height: 120px;
-    }
-
   .footer-links {
     color: white;
     display: flex;

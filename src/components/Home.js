@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./Footer";
 
 const Home = () => {
   return (
@@ -140,6 +141,7 @@ const Home = () => {
           />
         </div>
       </div>
+      <Footer className="footer" />
     </div>
   );
 };

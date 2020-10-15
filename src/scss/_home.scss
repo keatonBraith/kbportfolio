@@ -8,6 +8,7 @@
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  min-height: calc(100vh - 247px);
 
   @media (max-width: 1200px) {
     height: 100vh;
@@ -174,6 +175,7 @@
 
       @media (max-width: 500px) {
         margin-bottom: 0px;
+        width: 80vw;
       }
     }
 
@@ -441,6 +443,8 @@
 
         @media (max-width: 500px) {
           position: relative;
+          width: 100vw;
+          height: auto;
         }
       }
     }

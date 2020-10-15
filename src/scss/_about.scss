@@ -2,6 +2,7 @@
 
 .about-main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   animation: fadeInAnimation ease 3s;
@@ -29,6 +30,14 @@
     align-items: center;
     justify-content: center;
 
+    @media (max-width: 500px) {
+        height: auto;
+        padding: 20px;
+        width: 100vw;
+        margin-bottom: 0px;
+        border-radius: 0;
+      }
+
     .about-me{
         width: 90%;
         height: 25%;
@@ -40,16 +49,30 @@
         background-color: darken($color: rgb(158, 181, 215), $amount: 3);
         padding: 10px;
 
+        @media (max-width: 500px) {
+            width: 100%;
+          }
+
         h1{
             color: white;
             border-bottom: 2px darken($color: rgb(158, 181, 215), $amount: 15) solid;
             padding-bottom: 20px;
             font-weight: 900;
+
+            @media (max-width: 500px) {
+                padding-bottom: 5px;
+                margin-bottom: 10px;
+              }
         }
 
         p{
             color: white;
             text-align: center;
+
+            @media (max-width: 500px) {
+                // padding-bottom: 5px;
+                margin-bottom: 10px;
+              }
         }
     }
 
@@ -60,15 +83,27 @@
         grid-template-rows: 250px 250px 10px;
         font-family: $main-font;
 
+        @media (max-width: 500px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            width: 100%;
+          }
+
         div{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            padding: 10px;
 
             h1{
                 color: white;
                 margin-bottom: 10px;
+
+                @media (max-width: 500px) {
+                    font-size: 20px;
+                    text-align: center;
+                  }
 
                 span{
                     font-family: $main-font;
@@ -80,6 +115,11 @@
                 color: white;
                 width: 80%;
                 font-size: 20px;
+
+                @media (max-width: 500px) {
+                    font-size: 16px;
+                    text-align: center;
+                  }
             }
         }
 
