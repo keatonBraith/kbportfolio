@@ -99,19 +99,19 @@
 
 @media (max-width: 1000px) {
   .footer-main {
-    margin-top: 152vh;
+    margin-top: 121.4vh;
   }
 }
 
 @media (max-width: 770px) {
   .footer-main {
-    margin-top: 97vh;
+    margin-top: 106.5vh;
   }
 }
 
 @media (max-width: 400px) {
   .footer-main {
-    margin-top: 295.2vh;
+    margin-top: 228.3vh;
     height: 120px;
   }
 }
@@ -656,6 +656,21 @@
   background-color: #343e4b;
 }
 
+@media (max-width: 1200px) {
+  .home-body .projects-main .memory-body,
+  .home-body .projects-main .yy-body {
+    padding-left: 0px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1000px) {
+  .home-body .projects-main .memory-body,
+  .home-body .projects-main .yy-body {
+    height: 300px;
+  }
+}
+
 @media (max-width: 770px) {
   .home-body .projects-main .memory-body,
   .home-body .projects-main .yy-body {
@@ -684,6 +699,25 @@
   align-items: center;
   height: 80%;
   width: 60%;
+}
+
+@media (max-width: 1200px) {
+  .home-body .projects-main .memory-body .memory-info,
+  .home-body .projects-main .memory-body .yy-info,
+  .home-body .projects-main .yy-body .memory-info,
+  .home-body .projects-main .yy-body .yy-info {
+    margin-left: -25px;
+    width: 53%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .home-body .projects-main .memory-body .memory-info,
+  .home-body .projects-main .memory-body .yy-info,
+  .home-body .projects-main .yy-body .memory-info,
+  .home-body .projects-main .yy-body .yy-info {
+    margin-left: 10px;
+  }
 }
 
 @media (max-width: 770px) {
@@ -784,6 +818,13 @@
   right: 0;
 }
 
+@media (max-width: 1000px) {
+  .home-body .projects-main .memory-body img,
+  .home-body .projects-main .yy-body img {
+    height: 300px;
+  }
+}
+
 @media (max-width: 770px) {
   .home-body .projects-main .memory-body img,
   .home-body .projects-main .yy-body img {
@@ -806,6 +847,12 @@
   align-items: center;
   padding-left: 50px;
   background-color: #3e4a5a;
+}
+
+@media (max-width: 1000px) {
+  .home-body .projects-main .budget-body {
+    height: 300px;
+  }
 }
 
 @media (max-width: 770px) {
@@ -832,6 +879,14 @@
   height: 80%;
   width: 60%;
   margin-left: 38%;
+}
+
+@media (max-width: 1200px) {
+  .home-body .projects-main .budget-body .budget-info {
+    margin-left: 45%;
+    width: 80%;
+    text-align: center;
+  }
 }
 
 @media (max-width: 770px) {
@@ -898,6 +953,12 @@
   width: auto;
   position: absolute;
   left: 0;
+}
+
+@media (max-width: 1000px) {
+  .home-body .projects-main .budget-body img {
+    height: 300px;
+  }
 }
 
 @media (max-width: 770px) {
