@@ -9,6 +9,11 @@
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 
+  @media (max-width: 1200px) {
+    height: 100vh;
+    width: 100vw;
+  }
+
   @keyframes fadeInAnimation {
     0% {
       opacity: 0;
@@ -27,6 +32,12 @@
     justify-content: space-evenly;
     align-items: center;
 
+    @media (max-width: 1200px) {
+      height: 600px;
+      width: 100vw;
+      padding: 20px;
+    }
+
     .name {
       border-top: 3px solid white;
       border-bottom: 2px solid white;
@@ -40,24 +51,58 @@
       justify-content: center;
       font-weight: bolder;
       letter-spacing: 3px;
+
+      @media (max-width: 1200px) {
+        margin-bottom: 20px;
+      }
+
+      @media (max-width: 400px) {
+        font-size: 20px;
+        width: 300px;
+        height: 70px;
+      }
     }
+
+    
 
     .title {
       color: white;
       font-size: 27px;
       font-weight: lighter;
       letter-spacing: 2px;
+
+      @media (max-width: 1200px) {
+        margin-bottom: 20px;
+      }
+
+      @media (max-width: 400px) {
+        font-size: 20px;
+        text-align: center;
+      }
     }
 
     .fa-laptop-code {
       color: white;
       font-size: 100px;
+
+      @media (max-width: 1200px) {
+        margin-bottom: 20px;
+      }
+
+      @media (max-width: 400px) {
+        font-size: 60px;
+      }
     }
 
     .tech {
       color: white;
       font-size: 20px;
       letter-spacing: 2px;
+
+      @media (max-width: 400px) {
+        font-size: 17px;
+        text-align: center;
+      }
     }
 
     .link-btns {
@@ -96,6 +141,10 @@
     background-color: $black-coral;
     font-family: $main-font;
 
+    @media (max-width: 400px) {
+      height: auto;
+    }
+
     h3 {
       color: white;
       font-size: 30px;
@@ -106,6 +155,13 @@
       text-align: center;
       line-height: 40px;
       font-family: $main-font;
+
+      @media (max-width: 400px) {
+        font-size: 18px;
+        text-align: center;
+        width: 87vw;
+        margin-top: 10px;
+      }
     }
 
     p {
@@ -115,6 +171,10 @@
       line-height: 30px;
       margin-bottom: 20px;
       font-family: $main-font;
+
+      @media (max-width: 400px) {
+        margin-bottom: 0px;
+      }
     }
 
     .technology {
@@ -123,6 +183,21 @@
       grid-template-rows: 180px auto 10px;
       width: 90vw;
       font-family: $main-font;
+
+      @media (max-width: 1200px) {
+        grid-template-rows: 150px auto 10px;
+      }
+
+      @media (max-width: 770px) {
+        grid-template-rows: 125px auto 10px;
+      }
+
+      @media (max-width: 400px) {
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-bottom: 30px;
+        margin-left: -25px;
+      }
 
       i {
         font-size: 90px;
@@ -134,10 +209,42 @@
         height: 150px;
         margin: 0 69px;
 
+        @media (max-width: 1200px) {
+          font-size: 60px;
+        }
+
+        @media (max-width: 1000px) {
+          margin: 0 50px;
+        }
+
+        @media (max-width: 770px) {
+          font-size: 50px;
+          margin: 0 30px;
+        }
+
+        @media (max-width: 400px) {
+          font-size: 45px;
+          text-align: center;
+        }
+
         span {
           font-size: 20px;
           margin-top: 20px;
           font-family: $main-font;
+
+          @media (max-width: 1200px) {
+            font-size: 17px;
+          }
+
+          @media (max-width: 770px) {
+            font-size: 15px;
+          }
+        }
+      }
+
+      .express {
+        @media (max-width: 400px) {
+          display: none;
         }
       }
 
@@ -150,20 +257,52 @@
         font-size: 20px;
         color: white;
 
+        @media (max-width: 1200px) {
+          font-size: 17px;
+        }
+
+        @media (max-width: 770px) {
+          font-size: 15px;
+        }
+
         img {
           height: 100px;
           width: auto;
           margin-bottom: 20px;
+
+          @media (max-width: 1200px) {
+            height: 70px;
+          }
+
+          @media (max-width: 770px) {
+            height: 50px;
+          }
         }
 
         .redux-image {
           height: 80px;
           margin-bottom: 30px;
+
+          @media (max-width: 1200px) {
+            height: 60px;
+          }
+
+          @media (max-width: 770px) {
+            height: 45px;
+          }
         }
 
         .express-img {
           height: 30px;
           margin-bottom: 40px;
+
+          @media (max-width: 1200px) {
+            height: 20px;
+          }
+
+          @media (max-width: 770px) {
+            height: 17px;
+          }
         }
       }
     }
@@ -198,6 +337,16 @@
       padding-left: 50px;
       background-color: darken($color: rgb(83, 99, 120), $amount: 15);
 
+      @media (max-width: 770px) {
+        height: 250px;
+        padding-left: 0px;
+      }
+
+      @media (max-width: 400px) {
+        flex-direction: column;
+        height: 530px;
+      }
+
       .memory-info,
       .yy-info {
         color: white;
@@ -209,13 +358,36 @@
         height: 80%;
         width: 60%;
 
+        @media (max-width: 770px) {
+          margin-left: -25px;
+        }
+
+        @media (max-width: 400px) {
+          margin-left: 0;
+          width: 80%;
+          height: 60%;
+        }
+
         h3 {
           font-size: 35px;
+
+          @media (max-width: 770px) {
+            font-size: 28px;
+          }
         }
 
         p {
           font-size: 20px;
           width: 70%;
+
+          @media (max-width: 770px) {
+            font-size: 18px;
+            text-align: center;
+          }
+
+          @media (max-width: 400px) {
+            width: 100%;
+          }
         }
 
         a {
@@ -223,6 +395,10 @@
           text-decoration: none;
           cursor: pointer;
           font-size: 20px;
+
+          @media (max-width: 770px) {
+            font-size: 18px;
+          }
 
           span {
             font-family: $main-font;
@@ -236,6 +412,14 @@
         width: auto;
         position: absolute;
         right: 0;
+
+        @media (max-width: 770px) {
+          height: 250px;
+        }
+
+        @media (max-width: 400px) {
+          position: relative;
+        }
       }
     }
 
@@ -249,6 +433,16 @@
       padding-left: 50px;
       background-color: darken($color: rgb(83, 99, 120), $amount: 10);
 
+      @media (max-width: 770px) {
+        height: 250px;
+      }
+
+      @media (max-width: 400px) {
+        flex-direction: column;
+        height: 530px;
+        padding-left: 0;
+      }
+
       .budget-info {
         color: white;
         font-family: $main-font;
@@ -261,13 +455,35 @@
         //   position: relative;
         margin-left: 38%;
 
+        @media (max-width: 770px) {
+          margin-left: 42%;
+        }
+
+        @media (max-width: 400px) {
+          margin-left: 0%;
+          width: 100%;
+        }
+
         h3 {
           font-size: 35px;
+
+          @media (max-width: 770px) {
+            font-size: 28px;
+          }
         }
 
         p {
           font-size: 20px;
           width: 70%;
+
+          @media (max-width: 770px) {
+            font-size: 18px;
+            text-align: center;
+          }
+
+          @media (max-width: 400px) {
+            width: 80%;
+          }
         }
 
         a {
@@ -275,6 +491,10 @@
           text-decoration: none;
           cursor: pointer;
           font-size: 20px;
+
+          @media (max-width: 770px) {
+            font-size: 18px;
+          }
 
           span {
             font-family: $main-font;
@@ -288,6 +508,16 @@
         width: auto;
         position: absolute;
         left: 0;
+
+        @media (max-width: 770px) {
+          height: 250px;
+        }
+
+        @media (max-width: 400px) {
+          position: relative;
+          width: 100vw;
+          height: auto;
+        }
       }
     }
 

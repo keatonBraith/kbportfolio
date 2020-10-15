@@ -22,6 +22,10 @@
     background-color: transparent;
     color: white;
     cursor: pointer;
+    
+    @media (max-width: 1200px) {
+      right: 40px;
+    }
 
     &:hover{
         color: lightgray;
@@ -41,6 +45,10 @@
     transition: transform 0.4s cubic-bezier(0, 0.52, 0, 1);
     z-index: 9999;
 
+    @media (max-width:770px) {
+      width: 40vw;
+    }
+
     @media (max-width: 500px) {
       width: 50vw;
     }
@@ -48,6 +56,10 @@
 
   #flyoutMenu.hide {
     transform: translate3d(25vw, 0, 0);
+
+    @media (max-width:770px) {
+      transform: translate3d(45vw, 0, 0);
+    }
 
     @media (max-width: 500px) {
       transform: translate3d(55vw, 0, 0);
